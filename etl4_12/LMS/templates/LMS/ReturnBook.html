@@ -1,0 +1,26 @@
+{%  extends 'base.html' %}
+
+{% block title %}Return Book{% endblock %}
+
+{% block content %}
+    <h1>Return Book</h1>
+    <hr>
+    <button class="button2"><a href="{% url 'login' %}">logout</a></button>
+    <br>
+    <br>
+    <br>
+    <div class="Add">
+    <form action="/LMS/return/" method="POST">
+    {%  csrf_token %}
+    <br>
+    <br>
+        <label for="Student_id">Student_id:</label><input type="text" placeholder="Enter Student_id" name="Student_id" required/>
+    <br>
+    <br>
+        <label for="Book_id">Book_id:</label><input type="text" placeholder="Enter Book_id" name="Book_id" required/>
+    <br>
+    <br>
+    <button type="submit" class="button">Return Book</button>
+    </form>
+    </div>
+{% endblock %}

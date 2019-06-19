@@ -1,0 +1,34 @@
+body{
+    background: white url("images/lib.jpg");
+}
+.log{
+    float: right;
+    padding: 200px;
+    width: 500px;
+    }
+.buttonl {
+  background-color: #19f424;
+  border: black;
+  border-radius: 50px;
+  color: black;
+  padding: 10px 62px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buttonl:hover {opacity: 4}
+fieldset { border:2px solid black }
+
+legend {
+  color:black;
+  font-size:350%;
+
+  }
+label{
+    font-size: 30px;
+}

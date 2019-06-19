@@ -1,0 +1,41 @@
+{%  extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <h1>Admin</h1>
+    <hr>
+    <button class="button2"><a href="{% url 'login' %}">logout</a></button>
+    <br>
+    <br>
+    <center>
+    <button class="button1"><p><a href="{% url 'add' %}">Add Book</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'delete' %}">Delete Book</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'update' %}">Update Book</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'list' %}">List Books</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'issue' %}">Issue Book</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'issuedbook' %}">Issued Book</a></p></button>
+    <br>
+    <br>
+    <button class="button1"><p><a href="{% url 'returnbook' %}">Return Book</a></p></button>
+    <br>
+    </center>
+
+{% else %}
+  <center>
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+  </center>
+{% endif %}
+{% endblock %}

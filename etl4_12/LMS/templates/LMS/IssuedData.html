@@ -1,0 +1,33 @@
+{%  extends 'base.html' %}
+
+{% block title %}IssuedBook{% endblock %}
+
+{% block content %}
+     <h1>Issued Books</h1>
+    <hr>
+{%  if all_issue %}
+    <center>
+    <div class="list">
+    <table>
+        <tr>
+            <th>Student_id</th>
+            <th>Book_id</th>
+            <th>Branch</th>
+            <th>Return Date</th>
+        </tr>
+        {% for issue in all_issue %}
+        <tr>
+            <td>{{ issue.Student_id }}</td>
+            <td>{{ issue.Book_id }}</td>
+            <td>{{ issue.Brnch }}</td>
+            <td>{{ issue.Return_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    </center>
+{% endif %}
+    <br>
+    <br>
+    <a href="{% url 'home' %}"><input type="submit" class="ok"value="OK"></a>
+{% endblock %}

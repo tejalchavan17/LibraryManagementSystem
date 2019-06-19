@@ -1,0 +1,23 @@
+{%  extends 'base.html' %}
+
+{% block title %}IssuedBook{% endblock %}
+
+{% block content %}
+    <h1>Issued Book</h1>
+    <hr>
+    <button class="button2"><a href="{% url 'login' %}">logout</a></button>
+    <br>
+    <br>
+    <br>
+    <div class="Add">
+    <form action="/LMS/issueddata/" method="POST">
+    {%  csrf_token %}
+    <br>
+    <br>
+    <label for="Student_id">Student_id:</label><input type="text" name="Student_id" placeholder="Enter Student_id" required/>
+    <br>
+    <br>
+    <button type="submit" class="button">Submit</button>
+    </form>
+    </div>
+{% endblock %}

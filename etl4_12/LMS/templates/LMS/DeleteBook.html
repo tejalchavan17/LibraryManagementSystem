@@ -1,0 +1,15 @@
+{%  extends 'base.html' %}
+
+{% block title %}Delete{% endblock %}
+
+{% block content %}
+    <div class="delete">
+    <center>
+    <h1>Requested Book with ID {{ Book_id }} is Issued to Student with ID {{ Student_id }}</h1>
+    <h1>Delete after book is returned</h1>
+    </center>
+    </div>
+    <br>
+    <br>
+    <a href="{% url 'home' %}"><input type="submit" class="ok" value="OK"></a>
+{% endblock %}

@@ -1,0 +1,35 @@
+{%  extends 'base.html' %}
+
+{% block title %}ListBook{% endblock %}
+
+{% block content %}
+     <h1>Available Books</h1>
+    <hr>
+{%  if all_books %}
+    <center>
+    <div class="list">
+    <table>
+        <tr>
+            <th>Book_id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Branch</th>
+            <th>Quantity</th>
+        </tr>
+        {% for books in all_books %}
+        <tr>
+            <td>{{ books.Book_id }}</td>
+            <td>{{ books.Title }}</td>
+            <td>{{ books.Author }}</td>
+            <td>{{ books.Branch }}</td>
+            <td>{{ books.Quantity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    </center>
+{% endif %}
+    <br>
+    <br>
+    <a href="{% url 'home' %}"><input type="submit" class="ok" value="OK"></a>
+{% endblock %}

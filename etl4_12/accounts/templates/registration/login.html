@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Login</title>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/style1.css' %}" />
+</head>
+
+<body>
+<h1>Welcome to Library</h1>
+<hr>
+<div class="log">
+<form method="post">
+<fieldset>
+<legend align="left" class="admin">Admin</legend>
+    {%  csrf_token %}
+{{ form.as_p }}
+    <center><button type="submit" class="buttonl">Login</button></center>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

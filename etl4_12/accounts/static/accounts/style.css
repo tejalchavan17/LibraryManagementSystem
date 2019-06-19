@@ -1,0 +1,131 @@
+body{
+    background: white url("images/lib1.jpg");
+}
+
+
+background {
+    opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.log{
+    float: right;
+    padding: 200px;
+}
+.button {
+  background-color: #19f424;
+  border: black;
+  border-radius: 50px;
+  color: black;
+  padding: 10px 92px;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px 170px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {opacity: 4}
+.button1 {
+  background-color: #19f424;
+  border: black;
+  border-radius: 50px;
+  color: black;
+  padding: 08px 85px;
+  text-align: center;
+  font-size: 25px;
+  margin: 2px 4px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 500px;
+}
+.button1:hover {opacity: 4}
+.button2 {
+  background-color: #19f424;
+  border: black;
+  color: black;
+  padding: 08px 35px;
+  text-align: center;
+  font-size: 25px;
+  margin: -20px 0px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  float: right;
+}
+.button2:hover {opacity: 4}
+.Add{
+    padding: 20px 150px;
+}
+label{
+    font-size: 35px;
+}
+input[type=text] {
+    width: 40%;
+    padding: 10px 30px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    background-color: #19f424;
+    opacity: 0.9;
+    color: black;
+}
+.delete{
+    background-color: white;
+    width: 1500px;
+    border: 3px solid red;
+    padding: 35px;
+    margin: 20px;
+    align: center;
+}
+.ok {
+  background-color: #19f424;
+  border: black;
+  border-radius: 50px;
+  color: black;
+  padding: 10px 92px;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px 600px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ok:hover {opacity: 4}
+table, td, th {
+    border: 1px solid rgba(221, 221, 221, 0.97);
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+td {
+    background-color: white;
+    padding: 15px;
+}
+th {
+    background-color: aqua;
+    padding: 15px;
+}
+.list{
+    padding: 200px 82px;
+}
+input[type=date] {
+    width: 40%;
+    padding: 10px 30px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    background-color: #19f424;
+    opacity: 0.9;
+    color: black;
+}
